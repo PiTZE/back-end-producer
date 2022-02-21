@@ -18,3 +18,12 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
     depends_on:
       - zookeeper
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGODB_USERNAME=test
+      - MONGODB_PASSWORD=testtest
+      - MONGODB_DATABASE=testdb
+      - ALLOW_EMPTY_PASSWORD=yes
