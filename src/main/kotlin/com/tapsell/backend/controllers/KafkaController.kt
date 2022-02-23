@@ -1,3 +1,4 @@
 package com.tapsell.backend.controllers
 
-class ClickEventController()
+class KafkaController {
+}
