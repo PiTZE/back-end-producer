@@ -1,1 +1,6 @@
 GET http://localhost:8080
+###
+POST http://localhost:8080/api/message
+Content-Type: text/plain
+
+ammattt

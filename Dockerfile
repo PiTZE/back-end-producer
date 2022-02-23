@@ -1,5 +1,4 @@
 FROM openjdk:17
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+COPY /build/libs/back-end-0.0.1.jar /app/
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app/back-end-0.0.1.jar"]
